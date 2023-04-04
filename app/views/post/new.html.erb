@@ -1,0 +1,10 @@
+<h1>My brain hurts</h1>
+<p>and my cat is mean</p>
+
+
+<%= form_with model: @post do |form| %>
+  <%= form.label :body, "Your Post Here" %>
+  <br>
+  <%= form.text_field :body %>
+  <%= form.submit "Post" %>
+<% end %>
